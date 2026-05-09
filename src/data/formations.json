@@ -1,0 +1,106 @@
+[
+  {
+    "slug": "initiation-versailles-2026",
+    "code": "INIT-VRS-26",
+    "type": "initiation",
+    "title": "Initiation R.O.P. — Versailles",
+    "location": "Versailles · chez Elisabeth Breton",
+    "startDate": "2026-05-23",
+    "endDate": "2026-05-24",
+    "summary": "Présentation et initiation à la Réflexologie Occipito-Podale par Guy Boitout. Bases scientifiques, visualisation 3D, premières expérimentations pratiques.",
+    "price": "Voir avec Elisabeth Breton",
+    "registration": {
+      "contactName": "Elisabeth Breton",
+      "email": "contact@reflexobreton.fr",
+      "phone": "06 74 51 73 17"
+    }
+  },
+  {
+    "slug": "post-gradue-pediatrie-2025",
+    "code": "PG-PED-25",
+    "type": "postgrad",
+    "title": "Post-gradué Pédiatrie & MRP",
+    "location": "Paris 7ᵉ · 78A rue de Sèvres",
+    "startDate": "2025-11-28",
+    "endDate": "2025-11-30",
+    "summary": "Réflexologie Occipito-Podale appliquée au système crânio-sacré et à la pédiatrie. Plagiocéphalies, troubles fonctionnels du nourrisson, MRP.",
+    "price": "500 € (600 € avec prise en charge OPCO)"
+  },
+  {
+    "slug": "formation-de-base-2026",
+    "code": "BASE-2026",
+    "type": "base",
+    "title": "Formation de base — 12 jours",
+    "location": "Sully-sur-Loire",
+    "startDate": "2026-03-15",
+    "endDate": "2026-09-30",
+    "summary": "Cycle complet de 4 modules sur 12 jours. Cartographie R.O.P., technique de massage, protocole clinique. Agréé pour la formation continue.",
+    "price": "Détails sur demande"
+  },
+  {
+    "slug": "post-gradue-nerfs-craniens-2026",
+    "code": "PG-NC-26",
+    "type": "postgrad",
+    "title": "Post-gradué Nerfs Crâniens",
+    "location": "Paris",
+    "startDate": "2026-01-20",
+    "endDate": "2026-01-22",
+    "summary": "Anatomie et zones réflexes des douze paires de nerfs crâniens. Indications cliniques en R.O.P. : troubles sensoriels, oculomoteurs, vagaux.",
+    "price": "Détails sur demande"
+  },
+  {
+    "slug": "post-gradue-nerfs-spinaux-2026",
+    "code": "PG-NS-26",
+    "type": "postgrad",
+    "title": "Post-gradué Nerfs Spinaux",
+    "location": "Paris",
+    "startDate": "2026-04-10",
+    "endDate": "2026-04-12",
+    "summary": "Cartographie réflexe des plexus et nerfs spinaux. Indications cliniques pour les radiculalgies et troubles du système nerveux somatique périphérique.",
+    "price": "Détails sur demande"
+  },
+  {
+    "slug": "post-gradue-uro-genital-2026",
+    "code": "PG-UG-26",
+    "type": "postgrad",
+    "title": "Post-gradué Troubles Uro-Génitaux (H+F+enfant)",
+    "location": "Paris",
+    "startDate": "2026-06-05",
+    "endDate": "2026-06-07",
+    "summary": "Approche R.O.P. des troubles urinaires et génitaux : hommes, femmes, enfants. Cartographies pelviennes et zones réflexes occipitales associées.",
+    "price": "Détails sur demande"
+  },
+  {
+    "slug": "post-gradue-viscero-2026",
+    "code": "PG-VG-26",
+    "type": "postgrad",
+    "title": "Post-gradué Système Viscéro-Glandulaire + SNA",
+    "location": "Paris",
+    "startDate": "2026-09-18",
+    "endDate": "2026-09-20",
+    "summary": "Système nerveux autonome, mécanisme de stress, viscères abdominaux. Lecture clinique du nerf vague et protocole R.O.P. associé.",
+    "price": "Détails sur demande"
+  },
+  {
+    "slug": "post-gradue-orl-2026",
+    "code": "PG-ORL-26",
+    "type": "postgrad",
+    "title": "Post-gradué Troubles ORL & Respiratoires",
+    "location": "Paris",
+    "startDate": "2026-10-16",
+    "endDate": "2026-10-18",
+    "summary": "Sphère ORL, asthme fonctionnel, troubles vestibulaires. Zones réflexes des sinus, oreilles, sphère respiratoire.",
+    "price": "Détails sur demande"
+  },
+  {
+    "slug": "initiation-luxembourg-2026",
+    "code": "INIT-LUX-26",
+    "type": "initiation",
+    "title": "Initiation R.O.P. — Luxembourg",
+    "location": "Luxembourg",
+    "startDate": "2026-11-07",
+    "endDate": "2026-11-08",
+    "summary": "Présentation de la méthode R.O.P. et premières applications pratiques. Ouvert aux professionnels de santé.",
+    "price": "Détails sur demande"
+  }
+]

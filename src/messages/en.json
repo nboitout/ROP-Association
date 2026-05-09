@@ -1,0 +1,74 @@
+{
+  "site": {
+    "name": "R.O.P. Occipito-Podal Reflexology",
+    "title": "R.O.P. — Occipito-Podal Reflexology · Training Institute led by Guy Boitout",
+    "tagline": "A massage technique based on the representation of the body on the foot and the back of the head (the occiput).",
+    "founder": "Training Institute led by Guy BOITOUT",
+    "address_line1": "17 rue du Coq",
+    "address_line2": "45600 Sully-sur-Loire · France",
+    "phone": "+33 6 10 35 78 22",
+    "siret": "SIRET 428 736 342 00026",
+    "agrement": "Continuing-education accreditation 24450434645"
+  },
+  "nav": {
+    "home": "Home",
+    "method": "The R.O.P. method",
+    "method_foundations": "Theoretical foundations",
+    "method_technique": "Massage technique",
+    "method_cartography": "Cartography",
+    "method_books": "Books",
+    "indications": "Indications",
+    "trainings": "Trainings",
+    "teachers": "Teachers",
+    "practitioners": "Practitioners",
+    "research": "Research",
+    "books": "Books",
+    "contact": "Contact"
+  },
+  "home": {
+    "welcome_title": "Welcome to our site dedicated to health professionals and reflexologists",
+    "welcome_intro": "Explore our reflexology training program, our post-graduate modules and our online learning resources.",
+    "welcome_community": "Join a passionate and supportive community where exchange and shared expertise foster excellence in the fields of wellbeing and health.",
+    "welcome_close": "We are here to support you toward new professional and human horizons.",
+    "welcome_signoff": "Enjoy your visit!",
+    "hero_cta_method": "Discover the method",
+    "hero_cta_practitioners": "Find a practitioner",
+    "trainings_eyebrow": "Training calendar",
+    "trainings_title": "Upcoming sessions",
+    "trainings_link": "See all trainings",
+    "find_eyebrow": "Directory",
+    "find_title": "Find a certified practitioner",
+    "find_body": "All our reflexology practitioners, trained in the R.O.P. technique, are regularly evaluated and engaged in continuing education to guarantee a high level of competence and expertise.",
+    "find_link": "Browse the directory",
+    "books_eyebrow": "Bibliography",
+    "books_title": "Three works published by Éditions Elsevier-Masson",
+    "books_link": "See Guy Boitout's third book",
+    "testimonials_title": "Testimonials"
+  },
+  "practitioners": {
+    "eyebrow": "R.O.P. practitioner directory",
+    "title": "Certified practitioners",
+    "intro": "All our reflexology practitioners, trained in the R.O.P. technique, are regularly evaluated and engaged in continuing education to guarantee a high level of competence and expertise.",
+    "search_placeholder": "Search by name, city, postal code…",
+    "filter_all": "All regions",
+    "results_count": "{count} practitioners",
+    "no_results": "No practitioner matches this search."
+  },
+  "trainings": {
+    "title": "Trainings",
+    "intro": "Post-graduate modules are reserved for students who have completed the foundation course.",
+    "type_base": "Foundation course",
+    "type_postgrad": "Post-graduate",
+    "type_initiation": "Introduction",
+    "registration_title": "Information & registration",
+    "back_to_list": "Back to trainings",
+    "month_dates": "Dates",
+    "month_location": "Location",
+    "month_price": "Price"
+  },
+  "footer": {
+    "copyright": "© {year} Institut R.O.P. — All rights reserved",
+    "links_title": "Links",
+    "partners_title": "Partners"
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "site": {
+    "name": "R.O.P. Réflexologie Occipito-Podale",
+    "title": "R.O.P. — Réflexologie Occipito-Podale · Institut de Formation animé par Guy Boitout",
+    "tagline": "Une technique de massage basée sur la représentation du corps sur le pied et l'arrière de la tête (l'occiput).",
+    "founder": "Institut de Formation animé par Guy BOITOUT",
+    "address_line1": "17 rue du Coq",
+    "address_line2": "45600 Sully-sur-Loire",
+    "phone": "06 10 35 78 22",
+    "siret": "Siret : 428 736 342 00026",
+    "agrement": "Formation agréée pour la formation continue, numéro d'agrément 24450434645 auprès du préfet de région du Centre Val de Loire"
+  },
+  "nav": {
+    "home": "Accueil",
+    "method": "La méthode R.O.P.",
+    "method_foundations": "Les fondements théoriques",
+    "method_technique": "La technique de massage",
+    "method_cartography": "La cartographie",
+    "method_books": "Les livres",
+    "indications": "Les indications",
+    "trainings": "Nos formations",
+    "teachers": "Les enseignants",
+    "practitioners": "Les praticiens",
+    "research": "La recherche",
+    "books": "Les livres",
+    "contact": "Contact"
+  },
+  "home": {
+    "welcome_title": "Bienvenue sur notre site dédié aux professionnels de santé et aux réflexologues",
+    "welcome_intro": "Explorez notre programme de formation en réflexologie, nos post-gradués et nos ressources pédagogiques en ligne pour progresser à votre rythme.",
+    "welcome_community": "Rejoignez une communauté passionnée et solidaire, où l'échange et le partage d'expertise favorisent l'excellence dans le domaine du bien-être et de la santé.",
+    "welcome_close": "Nous sommes à vos côtés pour vous accompagner vers de nouveaux horizons professionnels et humains.",
+    "welcome_signoff": "Bonne visite !",
+    "hero_cta_method": "Découvrir la méthode",
+    "hero_cta_practitioners": "Trouver un praticien",
+    "trainings_eyebrow": "Calendrier des formations",
+    "trainings_title": "Prochaines sessions",
+    "trainings_link": "Voir toutes les formations",
+    "find_eyebrow": "Annuaire",
+    "find_title": "Trouver un praticien certifié",
+    "find_body": "Tous nos praticiens en réflexologie, formés selon la technique R.O.P., sont régulièrement évalués et participent à des formations continues pour garantir un haut niveau de compétence et d'expertise.",
+    "find_link": "Consulter l'annuaire",
+    "books_eyebrow": "Bibliographie",
+    "books_title": "Trois ouvrages publiés aux Éditions Elsevier-Masson",
+    "books_link": "Voir le 3ᵉ ouvrage de Guy Boitout",
+    "testimonials_title": "Témoignages"
+  },
+  "practitioners": {
+    "eyebrow": "Annuaire des praticiens R.O.P.",
+    "title": "Liste des praticiens certifiés",
+    "intro": "Tous nos praticiens en réflexologie, formés selon la technique R.O.P., sont régulièrement évalués et participent à des formations continues pour garantir un haut niveau de compétence et d'expertise.",
+    "search_placeholder": "Rechercher par nom, ville, code postal…",
+    "filter_all": "Toutes les régions",
+    "results_count": "{count} praticiens",
+    "no_results": "Aucun praticien ne correspond à cette recherche."
+  },
+  "trainings": {
+    "title": "Nos formations",
+    "intro": "Les post-gradués sont réservés aux étudiants ayant effectué la formation de base.",
+    "type_base": "Formation de base",
+    "type_postgrad": "Post-gradué",
+    "type_initiation": "Initiation",
+    "registration_title": "Renseignements et inscription",
+    "back_to_list": "Retour aux formations",
+    "month_dates": "Dates",
+    "month_location": "Lieu",
+    "month_price": "Tarif"
+  },
+  "footer": {
+    "copyright": "© {year} Institut R.O.P. — Tous droits réservés",
+    "links_title": "Liens",
+    "partners_title": "Partenaires"
+  }
+}
