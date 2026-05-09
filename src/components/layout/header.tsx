@@ -12,7 +12,6 @@ export function Header() {
 
   return (
     <header className="relative z-20 border-b border-ink-soft/20 bg-parchment/85 backdrop-blur-md">
-      {/* Institutional info bar — matches original Wix top bar */}
       <div className="hidden border-b border-ink-soft/15 bg-parchment-dark/40 px-6 py-2 text-[11px] text-ink-soft md:block">
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 lg:px-12">
           <div className="flex items-center gap-4">
@@ -21,7 +20,7 @@ export function Header() {
             <span>{tSite("siret")}</span>
           </div>
           <div className="flex items-center gap-4">
-            <span>Tél : {tSite("phone")}</span>
+            <span>Tél : {tSite("phone")}</span>
             <a
               href="https://www.facebook.com/reflexotherapie.occipitopodale.5/"
               target="_blank"
@@ -44,7 +43,6 @@ export function Header() {
         </div>
       </div>
 
-      {/* Main nav */}
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-12">
         <Link href="/" className="font-display tracking-tight text-ink hover:text-oxblood transition-colors">
           <span className="text-xl">R.O.P.</span>
@@ -54,7 +52,10 @@ export function Header() {
         </Link>
 
         <nav className="hidden items-center gap-7 text-sm uppercase tracking-[0.12em] lg:flex">
-          {/* Méthode with dropdown */}
+          <Link href="/" className="text-ink-muted hover:text-oxblood transition-colors">
+            {t("home")}
+          </Link>
+
           <div
             className="relative"
             onMouseEnter={() => setMethodOpen(true)}
@@ -85,6 +86,7 @@ export function Header() {
               </div>
             )}
           </div>
+
           <Link href="/indications" className="text-ink-muted hover:text-oxblood transition-colors">
             {t("indications")}
           </Link>
@@ -123,6 +125,7 @@ export function Header() {
       {mobileOpen && (
         <nav className="border-t border-ink-soft/20 bg-parchment-light px-6 py-4 lg:hidden">
           <ul className="space-y-3 text-sm uppercase tracking-[0.12em]">
+            <li><Link href="/" onClick={() => setMobileOpen(false)} className="block text-ink-muted hover:text-oxblood">{t("home")}</Link></li>
             <li><Link href="/methode" onClick={() => setMobileOpen(false)} className="block text-ink-muted hover:text-oxblood">{t("method")}</Link></li>
             <li className="ml-4 space-y-2 text-xs normal-case tracking-normal">
               <Link href="/methode/fondements" onClick={() => setMobileOpen(false)} className="block text-ink-soft hover:text-oxblood">{t("method_foundations")}</Link>
