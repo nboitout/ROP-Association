@@ -11,7 +11,7 @@ export default async function FondementsPage({
 
   return (
     <article className="mx-auto max-w-4xl px-6 py-20 lg:px-12 lg:py-32">
-      <Link href="/methode" className="eyebrow text-ink-muted hover:text-oxblood">
+      <Link href="/la-methode" className="eyebrow text-ink-muted hover:text-oxblood">
         ← La méthode
       </Link>
 

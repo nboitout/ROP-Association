@@ -1,0 +1,141 @@
+[
+  {
+    "id": "formation-de-base",
+    "slug": "formation-de-base",
+    "type": "base",
+    "title": "Formation de base R.O.P.",
+    "subtitle": "Cursus fondamental — 12 jours en 4 modules",
+    "summary": "Le socle de la méthode : cartographie 3D, technique de massage, protocole clinique. Conduit à la certification R.O.P.",
+    "full_description": "La formation de base est le passage obligé pour devenir praticien R.O.P. certifié. Elle se déroule sur 12 jours répartis en 4 modules, à Paris ou Sully-sur-Loire selon les cycles. Au programme : anatomie réflexogène, cartographie tridimensionnelle du corps sur le pied et l'occiput, gestes de massage, lecture clinique, premiers protocoles. À l'issue du cursus, le stagiaire est en mesure d'ouvrir un cabinet et d'accéder aux post-gradués.",
+    "specialty_tags": ["fondamentale"],
+    "prerequisites": [],
+    "agrement": "Formation agréée pour la formation continue — n° 24450434645",
+    "cycles": [
+      { "city": "Paris", "start_date": "2026-06-15", "end_date": "2026-06-26", "price": "À confirmer", "registration_open": true },
+      { "city": "Paris", "start_date": "2026-09-14", "end_date": "2026-09-25", "price": "À confirmer", "registration_open": true },
+      { "city": "Paris", "start_date": "2026-11-16", "end_date": "2026-11-27", "price": "À confirmer", "registration_open": true },
+      { "city": "Paris", "start_date": "2027-01-18", "end_date": "2027-01-29", "price": "À confirmer", "registration_open": true }
+    ]
+  },
+  {
+    "id": "pg-nerfs-craniens",
+    "slug": "nerfs-craniens",
+    "type": "postgrad",
+    "title": "Nerfs crâniens",
+    "subtitle": "Post-gradué — 3 jours",
+    "summary": "Anatomie et zones réflexes des douze paires de nerfs crâniens. Indications cliniques : troubles sensoriels, oculomoteurs, vagaux.",
+    "full_description": "Module dédié à la lecture réflexogène des douze paires de nerfs crâniens. Le stagiaire apprend à repérer les zones réflexes correspondantes sur le pied et l'occiput, et à construire un protocole adapté aux troubles sensoriels (vue, ouïe), oculomoteurs, vagaux et de la déglutition.",
+    "specialty_tags": ["nerfs-craniens"],
+    "prerequisites": ["formation-de-base"],
+    "cycles": [
+      { "city": "Paris", "start_date": "2026-01-20", "end_date": "2026-01-22", "price": "À confirmer", "registration_open": true }
+    ]
+  },
+  {
+    "id": "pg-nerfs-spinaux",
+    "slug": "nerfs-spinaux",
+    "type": "postgrad",
+    "title": "Nerfs spinaux",
+    "subtitle": "Post-gradué — 3 jours",
+    "summary": "Cartographie réflexe des plexus et nerfs spinaux. Indications cliniques pour les radiculalgies et troubles du système nerveux somatique périphérique.",
+    "full_description": "Approfondissement des plexus cervical, brachial, lombaire et sacré, et de leurs émergences spinales. Le module explore les indications cliniques en R.O.P. pour les radiculalgies, cervicobrachialgies, sciatalgies et troubles neurologiques périphériques fonctionnels.",
+    "specialty_tags": ["nerfs-spinaux"],
+    "prerequisites": ["formation-de-base"],
+    "cycles": [
+      { "city": "Paris", "start_date": "2026-04-10", "end_date": "2026-04-12", "price": "À confirmer", "registration_open": true }
+    ]
+  },
+  {
+    "id": "pg-uro-genital",
+    "slug": "uro-genital",
+    "type": "postgrad",
+    "title": "Troubles uro-génitaux (H / F / enfant)",
+    "subtitle": "Post-gradué — 3 jours",
+    "summary": "Approche R.O.P. des troubles urinaires et génitaux : hommes, femmes, enfants. Cartographies pelviennes et zones réflexes occipitales associées.",
+    "full_description": "Le module couvre les cartographies pelviennes spécifiques (vessie, prostate, utérus, ovaires) et leurs correspondances occipitales. Indications cliniques : énurésie de l'enfant, troubles fonctionnels urinaires, suivi post-partum, syndromes prémenstruels.",
+    "specialty_tags": ["uro-genital"],
+    "prerequisites": ["formation-de-base"],
+    "cycles": [
+      { "city": "Paris", "start_date": "2026-06-05", "end_date": "2026-06-07", "price": "À confirmer", "registration_open": true }
+    ]
+  },
+  {
+    "id": "pg-viscero-glandulaire-sna",
+    "slug": "viscero-glandulaire-sna",
+    "type": "postgrad",
+    "title": "Système viscéro-glandulaire + SNA",
+    "subtitle": "Post-gradué — 3 jours",
+    "summary": "Système nerveux autonome, mécanisme de stress, viscères abdominaux. Lecture clinique du nerf vague et protocole R.O.P. associé.",
+    "full_description": "Module central pour la lecture réflexogène des viscères abdominaux, des glandes endocrines et du système nerveux autonome (sympathique et parasympathique). Place particulière au nerf vague et à son rôle dans la régulation viscérale et émotionnelle.",
+    "specialty_tags": ["viscero-glandulaire-sna", "stress"],
+    "prerequisites": ["formation-de-base"],
+    "cycles": [
+      { "city": "Paris", "start_date": "2026-09-18", "end_date": "2026-09-20", "price": "À confirmer", "registration_open": true }
+    ]
+  },
+  {
+    "id": "pg-orl-respiratoires",
+    "slug": "orl-respiratoires",
+    "type": "postgrad",
+    "title": "Troubles ORL & respiratoires",
+    "subtitle": "Post-gradué — 3 jours",
+    "summary": "Sphère ORL, asthme fonctionnel, troubles vestibulaires. Zones réflexes des sinus, oreilles, sphère respiratoire.",
+    "full_description": "Cartographie fine de la sphère ORL et respiratoire : sinus, trompes d'Eustache, oreille interne, larynx, arbre bronchique. Indications cliniques : vertiges, sinusites chroniques fonctionnelles, asthme allergique, voix.",
+    "specialty_tags": ["orl-respiratoires"],
+    "prerequisites": ["formation-de-base"],
+    "cycles": [
+      { "city": "Paris", "start_date": "2026-10-16", "end_date": "2026-10-18", "price": "À confirmer", "registration_open": true }
+    ]
+  },
+  {
+    "id": "pg-pediatrie-mrp",
+    "slug": "pediatrie-mrp",
+    "type": "postgrad",
+    "title": "Pédiatrie & MRP",
+    "subtitle": "Post-gradué — 3 jours",
+    "summary": "Réflexologie Occipito-Podale appliquée au système crânio-sacré et à la pédiatrie. Plagiocéphalies, troubles fonctionnels du nourrisson, MRP.",
+    "full_description": "Module dédié au nourrisson et à l'enfant : lecture du mouvement respiratoire primaire (MRP), prise en charge des plagiocéphalies positionnelles, des troubles digestifs fonctionnels du nourrisson, du sommeil, des suites de naissance.",
+    "specialty_tags": ["pediatrie-mrp"],
+    "prerequisites": ["formation-de-base"],
+    "cycles": [
+      { "city": "Paris 7ᵉ · 78A rue de Sèvres", "start_date": "2025-11-28", "end_date": "2025-11-30", "price": "500 € (600 € avec prise en charge OPCO)", "registration_open": false }
+    ]
+  },
+  {
+    "id": "initiation-versailles-2026",
+    "slug": "initiation-versailles-2026",
+    "type": "initiation",
+    "title": "Initiation R.O.P. — Versailles",
+    "subtitle": "Présentation & premières expérimentations — 2 jours",
+    "summary": "Présentation et initiation à la Réflexologie Occipito-Podale par Guy Boitout. Bases scientifiques, visualisation 3D, premières expérimentations pratiques.",
+    "full_description": "Deux journées d'initiation pour découvrir la méthode R.O.P. : présentation des bases scientifiques, visualisation 3D du corps sur le pied et l'occiput, démonstrations et premières expérimentations pratiques. Ouvert aux professionnels de santé et au grand public motivé.",
+    "specialty_tags": [],
+    "prerequisites": [],
+    "cycles": [
+      {
+        "city": "Versailles · chez Elisabeth Breton",
+        "start_date": "2026-05-23",
+        "end_date": "2026-05-24",
+        "price": "Voir avec Elisabeth Breton",
+        "registration_open": true,
+        "contact_name": "Elisabeth Breton",
+        "contact_email": "contact@reflexobreton.fr",
+        "contact_phone": "06 74 51 73 17"
+      }
+    ]
+  },
+  {
+    "id": "initiation-luxembourg-2026",
+    "slug": "initiation-luxembourg-2026",
+    "type": "initiation",
+    "title": "Initiation R.O.P. — Luxembourg",
+    "subtitle": "Présentation & premières expérimentations — 2 jours",
+    "summary": "Présentation de la méthode R.O.P. et premières applications pratiques. Ouvert aux professionnels de santé.",
+    "full_description": "Deux journées d'initiation au Luxembourg pour découvrir la méthode R.O.P., ses bases scientifiques et ses premières applications pratiques. Ouvert aux professionnels de santé.",
+    "specialty_tags": [],
+    "prerequisites": [],
+    "cycles": [
+      { "city": "Luxembourg", "start_date": "2026-11-07", "end_date": "2026-11-08", "price": "À confirmer", "registration_open": true }
+    ]
+  }
+]

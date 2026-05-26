@@ -1,10 +1,11 @@
 import { setRequestLocale } from "next-intl/server";
 import { Hero } from "@/components/home/hero";
-import { Welcome } from "@/components/home/welcome";
-import { NextTrainings } from "@/components/home/next-trainings";
+import { WhatIsRop } from "@/components/home/what-is-rop";
+import { HeritageTimeline } from "@/components/home/heritage-timeline";
+import { TwoTracks } from "@/components/home/two-tracks";
 import { Testimonials } from "@/components/home/testimonials";
-import { FindPractitioner } from "@/components/home/find-practitioner";
-import { BooksStrip } from "@/components/home/books-strip";
+import { CredibilityBand } from "@/components/home/credibility-band";
+import { LeadCapture } from "@/components/home/lead-capture";
 
 export default async function HomePage({
   params,
@@ -17,11 +18,12 @@ export default async function HomePage({
   return (
     <>
       <Hero />
-      <Welcome />
-      <NextTrainings />
+      <WhatIsRop />
+      <HeritageTimeline />
+      <TwoTracks />
       <Testimonials />
-      <FindPractitioner />
-      <BooksStrip />
+      <CredibilityBand />
+      <LeadCapture />
     </>
   );
 }

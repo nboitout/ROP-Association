@@ -8,21 +8,20 @@ export function Footer() {
   return (
     <footer className="relative z-10 mt-32 border-t border-ink-soft/20 bg-parchment-dark/50">
       <div className="mx-auto max-w-7xl px-6 py-16 lg:px-12">
-        <div className="grid gap-12 md:grid-cols-3">
-          <div>
+        <div className="grid gap-12 md:grid-cols-4">
+          <div className="md:col-span-2">
             <h3 className="font-display text-2xl tracking-tight">
               R.O.P. <em className="text-oxblood">Réflexologie Occipito-Podale</em>
             </h3>
-            <p className="mt-3 text-sm text-ink-muted">{t("site.tagline")}</p>
+            <p className="mt-3 max-w-sm text-sm text-ink-muted">{t("site.tagline")}</p>
             <p className="mt-4 text-sm font-medium text-ink">{t("site.founder")}</p>
-          </div>
 
-          <div>
-            <p className="eyebrow mb-4">{t("nav.contact")}</p>
-            <address className="not-italic text-sm leading-relaxed text-ink-muted">
+            <address className="not-italic mt-6 text-sm leading-relaxed text-ink-muted">
               {t("site.address_line1")}<br />
               {t("site.address_line2")}<br />
-              <span className="mt-2 inline-block">Tél : <a href={`tel:${t("site.phone").replace(/\s/g, "")}`} className="hover:text-oxblood">{t("site.phone")}</a></span>
+              <span className="mt-2 inline-block">
+                Tél : <a href={`tel:${t("site.phone").replace(/\s/g, "")}`} className="hover:text-oxblood">{t("site.phone")}</a>
+              </span>
             </address>
             <p className="mt-4 text-xs leading-relaxed text-ink-soft">
               {t("site.siret")}<br />
@@ -33,24 +32,36 @@ export function Footer() {
           <div>
             <p className="eyebrow mb-4">{t("footer.links_title")}</p>
             <ul className="space-y-2 text-sm text-ink-muted">
-              <li><Link href="/methode" className="hover:text-oxblood">{t("nav.method")}</Link></li>
-              <li><Link href="/formations" className="hover:text-oxblood">{t("nav.trainings")}</Link></li>
-              <li><Link href="/praticiens" className="hover:text-oxblood">{t("nav.practitioners")}</Link></li>
-              <li><Link href="/livres" className="hover:text-oxblood">{t("nav.books")}</Link></li>
-              <li>
-                <a href="https://rop-pi.vercel.app" className="hover:text-oxblood" target="_blank" rel="noreferrer">
-                  3ᵉ ouvrage de Guy Boitout ↗
-                </a>
-              </li>
+              <li><Link href="/la-methode" className="hover:text-oxblood">{t("nav.method")}</Link></li>
+              <li><Link href="/se-former" className="hover:text-oxblood">{t("nav.training")}</Link></li>
+              <li><Link href="/trouver-un-praticien" className="hover:text-oxblood">{t("nav.directory")}</Link></li>
+              <li><Link href="/enseignants" className="hover:text-oxblood">{t("nav.teachers")}</Link></li>
+              <li><Link href="/recherche" className="hover:text-oxblood">{t("nav.research")}</Link></li>
+              <li><Link href="/contact" className="hover:text-oxblood">{t("nav.contact")}</Link></li>
             </ul>
 
             <p className="eyebrow mb-3 mt-8">{t("footer.partners_title")}</p>
             <ul className="space-y-1 text-xs text-ink-soft">
               <li><a href="https://www.data-dock.fr" target="_blank" rel="noreferrer" className="hover:text-oxblood">Datadock</a></li>
-              <li><a href="https://syndicat-reflexologues.com" target="_blank" rel="noreferrer" className="hover:text-oxblood">Syndicat Professionnel des Réflexologues</a></li>
-              <li><a href="https://reflexology-europe.org" target="_blank" rel="noreferrer" className="hover:text-oxblood">RIEN — Reflexology in Europe</a></li>
-              <li><a href="https://www.osteopathie.org/" target="_blank" rel="noreferrer" className="hover:text-oxblood">Registre des Ostéopathes de France</a></li>
+              <li><a href="https://syndicat-reflexologues.com" target="_blank" rel="noreferrer" className="hover:text-oxblood">Syndicat des Réflexologues</a></li>
+              <li><a href="https://reflexology-europe.org" target="_blank" rel="noreferrer" className="hover:text-oxblood">Reflexology in Europe</a></li>
+              <li><a href="https://www.osteopathie.org/" target="_blank" rel="noreferrer" className="hover:text-oxblood">Registre des Ostéopathes</a></li>
             </ul>
+          </div>
+
+          <div>
+            <p className="eyebrow mb-4">{t("footer.publications_title")}</p>
+            <p className="text-sm leading-relaxed text-ink-muted">
+              {t("footer.publications_blurb")}
+            </p>
+            <a
+              href="https://www.guy-boitout.com"
+              target="_blank"
+              rel="noreferrer"
+              className="mt-3 inline-block text-sm tracking-wide text-oxblood hover:text-oxblood-deep"
+            >
+              {t("footer.publications_link")}
+            </a>
           </div>
         </div>
 

@@ -2,12 +2,13 @@
 
 import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
+import { Link } from "@/lib/navigation";
 import praticiens from "@/data/praticiens.json";
 
 type Practitioner = (typeof praticiens)[number];
 
-export default function PraticiensPage() {
-  const t = useTranslations("practitioners");
+export default function DirectoryPage() {
+  const t = useTranslations("directory");
   const [query, setQuery] = useState("");
   const [region, setRegion] = useState<string>("all");
 
@@ -42,9 +43,10 @@ export default function PraticiensPage() {
   return (
     <article className="mx-auto max-w-7xl px-6 py-20 lg:px-12 lg:py-32">
       <p className="eyebrow rise">{t("eyebrow")}</p>
-      <h1 className="rise rise-delay-1 mt-6 font-display text-5xl leading-tight tracking-tight md:text-7xl">
-        Liste des <em className="text-oxblood">praticiens certifiés</em>
-      </h1>
+      <h1
+        className="rise rise-delay-1 mt-6 font-display text-5xl leading-tight tracking-tight md:text-7xl"
+        dangerouslySetInnerHTML={{ __html: t.raw("title_html") as string }}
+      />
       <p className="rise rise-delay-2 mt-8 max-w-3xl font-display text-xl italic leading-relaxed text-ink-muted md:text-2xl">
         {t("intro")}
       </p>
@@ -96,6 +98,13 @@ export default function PraticiensPage() {
           </p>
         )}
       </div>
+
+      <p className="mt-16 border-t border-ink-soft/20 pt-6 text-sm italic text-ink-muted">
+        {t("add_yourself")}{" "}
+        <Link href="/contact" className="text-oxblood hover:text-oxblood-deep">
+          Contact →
+        </Link>
+      </p>
     </article>
   );
 }
@@ -103,7 +112,9 @@ export default function PraticiensPage() {
 function PractitionerCard({ p }: { p: Practitioner }) {
   return (
     <li>
-      <h3 className="font-display text-lg leading-tight">{p.name}</h3>
+      <Link href={`/praticiens/${p.id}`} className="font-display text-lg leading-tight hover:text-oxblood">
+        {p.name}
+      </Link>
       {p.address && (
         <p className="mt-1 text-sm leading-snug text-ink-muted">{p.address}</p>
       )}

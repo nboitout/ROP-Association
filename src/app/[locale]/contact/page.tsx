@@ -20,7 +20,9 @@ export default async function ContactPage({
         <div>
           <p className="eyebrow">Adresse</p>
           <address className="mt-3 not-italic text-lg leading-relaxed">
-            {t("address")}
+            {t("address_line1")}
+            <br />
+            {t("address_line2")}
           </address>
           <p className="mt-6 eyebrow">Téléphone</p>
           <a

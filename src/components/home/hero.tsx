@@ -17,48 +17,49 @@ export function Hero() {
       </div>
 
       <div className="mx-auto max-w-7xl px-6 pb-20 pt-20 lg:px-12 lg:pt-32 lg:pb-24">
-        <p className="eyebrow rise rise-delay-1">Institut de Formation</p>
+        <p className="eyebrow rise rise-delay-1">{t("hero_eyebrow")}</p>
 
-        <h1 className="rise rise-delay-2 mt-6 max-w-5xl font-display text-5xl leading-[1.05] tracking-tight md:text-7xl lg:text-[5.5rem]">
-          R.O.P. <em>Réflexologie</em> Occipito-Podale
-        </h1>
+        <h1
+          className="rise rise-delay-2 mt-6 max-w-5xl font-display text-5xl leading-[1.05] tracking-tight md:text-7xl lg:text-[5.5rem]"
+          dangerouslySetInnerHTML={{ __html: t.raw("hero_title_html") as string }}
+        />
 
         <p className="rise rise-delay-3 mt-8 max-w-3xl font-display text-xl italic leading-relaxed text-ink-muted md:text-2xl">
-          Une technique de massage basée sur la représentation du corps sur le pied
-          et l'arrière de la tête (l'occiput).
+          {t("hero_tagline")}
         </p>
 
-        <p className="rise rise-delay-3 mt-3 text-sm tracking-wide text-ink">
-          Institut de Formation animé par <strong className="font-medium">Guy BOITOUT</strong>
-        </p>
+        <p
+          className="rise rise-delay-3 mt-3 text-sm tracking-wide text-ink"
+          dangerouslySetInnerHTML={{ __html: t.raw("hero_founder") as string }}
+        />
 
         <div className="rise rise-delay-4 mt-10 flex flex-col gap-4 sm:flex-row">
           <Link
-            href="/methode"
+            href="/se-former"
             className="inline-flex items-center justify-center rounded-md bg-oxblood px-8 py-4 text-sm font-medium tracking-wide text-parchment-light transition-colors hover:bg-oxblood-deep"
           >
-            {t("hero_cta_method")}
+            {t("hero_cta_training")}
           </Link>
           <Link
-            href="/praticiens"
+            href="/trouver-un-praticien"
             className="inline-flex items-center justify-center rounded-md border border-ink-soft/40 px-8 py-4 text-sm font-medium tracking-wide text-ink hover:border-oxblood hover:text-oxblood transition-colors"
           >
-            {t("hero_cta_practitioners")}
+            {t("hero_cta_directory")}
           </Link>
         </div>
 
         <div className="rise rise-delay-5 mt-16 grid gap-8 border-t border-ink-soft/20 pt-8 text-sm md:grid-cols-3">
           <div>
-            <p className="eyebrow mb-2">Concepteurs</p>
+            <p className="eyebrow mb-2">{t("hero_stat_lineage")}</p>
             <p className="text-ink">Guy BOITOUT &amp; Jean-Pierre VADALA</p>
           </div>
           <div>
             <p className="eyebrow mb-2">Publications</p>
-            <p className="text-ink">3 ouvrages — Éditions Elsevier-Masson</p>
+            <p className="text-ink">{t("hero_stat_books")}</p>
           </div>
           <div>
-            <p className="eyebrow mb-2">Praticiens certifiés</p>
-            <p className="text-ink">70+ — France &amp; Espagne</p>
+            <p className="eyebrow mb-2">Praticiens</p>
+            <p className="text-ink">{t("hero_stat_practitioners")}</p>
           </div>
         </div>
       </div>

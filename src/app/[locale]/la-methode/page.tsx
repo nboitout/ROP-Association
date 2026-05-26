@@ -173,7 +173,7 @@ export default async function MethodePage({
         <p className="eyebrow">Pour aller plus loin</p>
         <div className="mt-6 grid gap-4 md:grid-cols-3">
           <Link
-            href="/methode/fondements"
+            href="/la-methode/fondements"
             className="group block border border-ink-soft/30 p-6 transition-colors hover:border-oxblood"
           >
             <p className="font-mono text-xs text-oxblood">§ 01</p>
@@ -183,7 +183,7 @@ export default async function MethodePage({
             </p>
           </Link>
           <Link
-            href="/methode/technique"
+            href="/la-methode/technique"
             className="group block border border-ink-soft/30 p-6 transition-colors hover:border-oxblood"
           >
             <p className="font-mono text-xs text-oxblood">§ 02</p>
@@ -193,7 +193,7 @@ export default async function MethodePage({
             </p>
           </Link>
           <Link
-            href="/methode/cartographie"
+            href="/la-methode/cartographie"
             className="group block border border-ink-soft/30 p-6 transition-colors hover:border-oxblood"
           >
             <p className="font-mono text-xs text-oxblood">§ 03</p>

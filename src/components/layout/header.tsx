@@ -1,14 +1,19 @@
 "use client";
 
 import { useState } from "react";
-import { useTranslations } from "next-intl";
-import { Link } from "@/lib/navigation";
+import { useTranslations, useLocale } from "next-intl";
+import { Link, usePathname } from "@/lib/navigation";
 
 export function Header() {
   const t = useTranslations("nav");
   const tSite = useTranslations("site");
+  const locale = useLocale();
+  const pathname = usePathname();
   const [methodOpen, setMethodOpen] = useState(false);
+  const [trainOpen, setTrainOpen] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+
+  const otherLocale = locale === "fr" ? "en" : "fr";
 
   return (
     <header className="relative z-20 border-b border-ink-soft/20 bg-parchment/85 backdrop-blur-md">
@@ -20,25 +25,18 @@ export function Header() {
             <span>{tSite("siret")}</span>
           </div>
           <div className="flex items-center gap-4">
-            <span>Tél : {tSite("phone")}</span>
+            <span>Tél : {tSite("phone")}</span>
             <a
-              href="https://www.facebook.com/reflexotherapie.occipitopodale.5/"
+              href="https://www.guy-boitout.com"
               target="_blank"
               rel="noreferrer"
               className="hover:text-oxblood"
-              aria-label="Facebook"
             >
-              Facebook
+              {t("publications_external")}
             </a>
-            <a
-              href="https://youtu.be/rrdEmooeXAo"
-              target="_blank"
-              rel="noreferrer"
-              className="hover:text-oxblood"
-              aria-label="YouTube"
-            >
-              YouTube
-            </a>
+            <Link href={pathname} locale={otherLocale} className="font-mono uppercase hover:text-oxblood">
+              {otherLocale}
+            </Link>
           </div>
         </div>
       </div>
@@ -52,55 +50,49 @@ export function Header() {
         </Link>
 
         <nav className="hidden items-center gap-7 text-sm uppercase tracking-[0.12em] lg:flex">
-          <Link href="/" className="text-ink-muted hover:text-oxblood transition-colors">
-            {t("home")}
-          </Link>
-
           <div
             className="relative"
             onMouseEnter={() => setMethodOpen(true)}
             onMouseLeave={() => setMethodOpen(false)}
           >
-            <Link
-              href="/methode"
-              className="text-ink-muted hover:text-oxblood transition-colors"
-            >
+            <Link href="/la-methode" className="text-ink-muted hover:text-oxblood transition-colors">
               {t("method")}
             </Link>
             {methodOpen && (
               <div className="absolute left-0 top-full pt-3">
                 <div className="min-w-[260px] border border-ink-soft/20 bg-parchment-light shadow-lg">
-                  <Link href="/methode/fondements" className="block px-5 py-3 text-xs normal-case tracking-normal text-ink-muted hover:bg-parchment hover:text-oxblood">
-                    {t("method_foundations")}
-                  </Link>
-                  <Link href="/methode/technique" className="block px-5 py-3 text-xs normal-case tracking-normal text-ink-muted hover:bg-parchment hover:text-oxblood">
-                    {t("method_technique")}
-                  </Link>
-                  <Link href="/methode/cartographie" className="block px-5 py-3 text-xs normal-case tracking-normal text-ink-muted hover:bg-parchment hover:text-oxblood">
-                    {t("method_cartography")}
-                  </Link>
-                  <Link href="/livres" className="block px-5 py-3 text-xs normal-case tracking-normal text-ink-muted hover:bg-parchment hover:text-oxblood">
-                    {t("method_books")}
-                  </Link>
+                  <DropLink href="/la-methode/fondements">{t("method_foundations")}</DropLink>
+                  <DropLink href="/la-methode/technique">{t("method_technique")}</DropLink>
+                  <DropLink href="/la-methode/cartographie">{t("method_cartography")}</DropLink>
+                  <DropLink href="/la-methode/indications">{t("method_indications")}</DropLink>
+                  <DropLink href="/la-methode/livres">{t("method_books")}</DropLink>
                 </div>
               </div>
             )}
           </div>
 
-          <Link href="/indications" className="text-ink-muted hover:text-oxblood transition-colors">
-            {t("indications")}
-          </Link>
-          <Link href="/formations" className="text-ink-muted hover:text-oxblood transition-colors">
-            {t("trainings")}
-          </Link>
-          <Link href="/enseignants" className="text-ink-muted hover:text-oxblood transition-colors">
-            {t("teachers")}
-          </Link>
-          <Link href="/praticiens" className="text-ink-muted hover:text-oxblood transition-colors">
-            {t("practitioners")}
-          </Link>
-          <Link href="/recherche" className="text-ink-muted hover:text-oxblood transition-colors">
-            {t("research")}
+          <div
+            className="relative"
+            onMouseEnter={() => setTrainOpen(true)}
+            onMouseLeave={() => setTrainOpen(false)}
+          >
+            <Link href="/se-former" className="text-ink-muted hover:text-oxblood transition-colors">
+              {t("training")}
+            </Link>
+            {trainOpen && (
+              <div className="absolute left-0 top-full pt-3">
+                <div className="min-w-[260px] border border-ink-soft/20 bg-parchment-light shadow-lg">
+                  <DropLink href="/se-former/formation-de-base">{t("training_base")}</DropLink>
+                  <DropLink href="/se-former/post-gradues">{t("training_postgrads")}</DropLink>
+                  <DropLink href="/se-former/calendrier">{t("training_calendar")}</DropLink>
+                  <DropLink href="/se-former/initiations">{t("training_initiations")}</DropLink>
+                </div>
+              </div>
+            )}
+          </div>
+
+          <Link href="/trouver-un-praticien" className="text-ink-muted hover:text-oxblood transition-colors">
+            {t("directory")}
           </Link>
           <Link href="/contact" className="text-ink-muted hover:text-oxblood transition-colors">
             {t("contact")}
@@ -125,23 +117,59 @@ export function Header() {
       {mobileOpen && (
         <nav className="border-t border-ink-soft/20 bg-parchment-light px-6 py-4 lg:hidden">
           <ul className="space-y-3 text-sm uppercase tracking-[0.12em]">
-            <li><Link href="/" onClick={() => setMobileOpen(false)} className="block text-ink-muted hover:text-oxblood">{t("home")}</Link></li>
-            <li><Link href="/methode" onClick={() => setMobileOpen(false)} className="block text-ink-muted hover:text-oxblood">{t("method")}</Link></li>
+            <li><MobileLink href="/" onClick={() => setMobileOpen(false)}>{t("home")}</MobileLink></li>
+            <li><MobileLink href="/la-methode" onClick={() => setMobileOpen(false)}>{t("method")}</MobileLink></li>
             <li className="ml-4 space-y-2 text-xs normal-case tracking-normal">
-              <Link href="/methode/fondements" onClick={() => setMobileOpen(false)} className="block text-ink-soft hover:text-oxblood">{t("method_foundations")}</Link>
-              <Link href="/methode/technique" onClick={() => setMobileOpen(false)} className="block text-ink-soft hover:text-oxblood">{t("method_technique")}</Link>
-              <Link href="/methode/cartographie" onClick={() => setMobileOpen(false)} className="block text-ink-soft hover:text-oxblood">{t("method_cartography")}</Link>
-              <Link href="/livres" onClick={() => setMobileOpen(false)} className="block text-ink-soft hover:text-oxblood">{t("method_books")}</Link>
+              <MobileLink href="/la-methode/fondements" onClick={() => setMobileOpen(false)}>{t("method_foundations")}</MobileLink>
+              <MobileLink href="/la-methode/technique" onClick={() => setMobileOpen(false)}>{t("method_technique")}</MobileLink>
+              <MobileLink href="/la-methode/cartographie" onClick={() => setMobileOpen(false)}>{t("method_cartography")}</MobileLink>
+              <MobileLink href="/la-methode/indications" onClick={() => setMobileOpen(false)}>{t("method_indications")}</MobileLink>
+              <MobileLink href="/la-methode/livres" onClick={() => setMobileOpen(false)}>{t("method_books")}</MobileLink>
             </li>
-            <li><Link href="/indications" onClick={() => setMobileOpen(false)} className="block text-ink-muted hover:text-oxblood">{t("indications")}</Link></li>
-            <li><Link href="/formations" onClick={() => setMobileOpen(false)} className="block text-ink-muted hover:text-oxblood">{t("trainings")}</Link></li>
-            <li><Link href="/enseignants" onClick={() => setMobileOpen(false)} className="block text-ink-muted hover:text-oxblood">{t("teachers")}</Link></li>
-            <li><Link href="/praticiens" onClick={() => setMobileOpen(false)} className="block text-ink-muted hover:text-oxblood">{t("practitioners")}</Link></li>
-            <li><Link href="/recherche" onClick={() => setMobileOpen(false)} className="block text-ink-muted hover:text-oxblood">{t("research")}</Link></li>
-            <li><Link href="/contact" onClick={() => setMobileOpen(false)} className="block text-ink-muted hover:text-oxblood">{t("contact")}</Link></li>
+            <li><MobileLink href="/se-former" onClick={() => setMobileOpen(false)}>{t("training")}</MobileLink></li>
+            <li className="ml-4 space-y-2 text-xs normal-case tracking-normal">
+              <MobileLink href="/se-former/formation-de-base" onClick={() => setMobileOpen(false)}>{t("training_base")}</MobileLink>
+              <MobileLink href="/se-former/post-gradues" onClick={() => setMobileOpen(false)}>{t("training_postgrads")}</MobileLink>
+              <MobileLink href="/se-former/calendrier" onClick={() => setMobileOpen(false)}>{t("training_calendar")}</MobileLink>
+              <MobileLink href="/se-former/initiations" onClick={() => setMobileOpen(false)}>{t("training_initiations")}</MobileLink>
+            </li>
+            <li><MobileLink href="/trouver-un-praticien" onClick={() => setMobileOpen(false)}>{t("directory")}</MobileLink></li>
+            <li><MobileLink href="/contact" onClick={() => setMobileOpen(false)}>{t("contact")}</MobileLink></li>
+            <li className="border-t border-ink-soft/20 pt-3">
+              <Link href={pathname} locale={otherLocale} onClick={() => setMobileOpen(false)} className="font-mono text-xs uppercase text-ink-soft hover:text-oxblood">
+                {otherLocale === "en" ? "English" : "Français"}
+              </Link>
+            </li>
           </ul>
         </nav>
       )}
     </header>
+  );
+}
+
+function DropLink({ href, children }: { href: string; children: React.ReactNode }) {
+  return (
+    <Link
+      href={href}
+      className="block px-5 py-3 text-xs normal-case tracking-normal text-ink-muted hover:bg-parchment hover:text-oxblood"
+    >
+      {children}
+    </Link>
+  );
+}
+
+function MobileLink({
+  href,
+  onClick,
+  children,
+}: {
+  href: string;
+  onClick: () => void;
+  children: React.ReactNode;
+}) {
+  return (
+    <Link href={href} onClick={onClick} className="block text-ink-muted hover:text-oxblood">
+      {children}
+    </Link>
   );
 }
