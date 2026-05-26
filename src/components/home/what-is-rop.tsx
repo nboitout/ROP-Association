@@ -16,9 +16,9 @@ export function WhatIsRop() {
 
           {/* Anatomical schematic — foot + occiput cartography */}
           <div className="mt-10 hidden lg:block">
-            <svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg" className="h-auto w-full opacity-70">
+            <svg viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg" className="h-auto w-full opacity-60">
               {/* Foot outline (left) */}
-              <g stroke="currentColor" strokeWidth="0.8" fill="none" className="text-ink-muted">
+              <g stroke="currentColor" strokeWidth="0.8" fill="none" className="text-sage-light">
                 <path d="M40 30 C30 60 30 100 50 140 C70 170 110 175 120 160 C130 145 130 120 125 95 C120 70 115 45 100 30 C85 18 55 18 40 30 Z" />
                 <circle cx="80" cy="50" r="6" />
                 <circle cx="62" cy="62" r="4" />
@@ -30,7 +30,7 @@ export function WhatIsRop() {
                 <path d="M70 30 L 80 160" strokeDasharray="2 3" />
               </g>
               {/* Occiput outline (right) */}
-              <g stroke="currentColor" strokeWidth="0.8" fill="none" className="text-ink-muted">
+              <g stroke="currentColor" strokeWidth="0.8" fill="none" className="text-sage-light">
                 <path d="M200 100 C200 60 230 35 260 35 C290 35 310 60 310 100 C310 140 290 165 260 165 C230 165 200 140 200 100 Z" />
                 <path d="M210 100 C210 70 235 50 260 50 C285 50 300 70 300 100" strokeDasharray="3 3" />
                 <circle cx="240" cy="80" r="3" />
@@ -58,7 +58,7 @@ export function WhatIsRop() {
           </p>
           <Link
             href="/la-methode/fondements"
-            className="mt-8 inline-flex items-center text-sm tracking-wide text-oxblood hover:text-oxblood-deep transition-colors"
+            className="mt-8 inline-flex items-center text-sm tracking-wide text-sage hover:text-sage-deep transition-colors"
           >
             {t("what_link")} →
           </Link>

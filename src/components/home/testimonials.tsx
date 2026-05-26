@@ -26,7 +26,7 @@ export function Testimonials() {
 
       <div className="mt-12 grid gap-10 md:grid-cols-2">
         {testimonials.map((tm, i) => (
-          <figure key={i} className="border-l-2 border-oxblood/60 pl-6">
+          <figure key={i} className="border-l-2 border-sage/50 pl-6">
             <blockquote className="font-display text-lg leading-relaxed italic text-ink-muted md:text-xl">
               « {tm.body} »
             </blockquote>

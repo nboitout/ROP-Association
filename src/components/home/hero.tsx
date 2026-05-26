@@ -36,13 +36,13 @@ export function Hero() {
         <div className="rise rise-delay-4 mt-10 flex flex-col gap-4 sm:flex-row">
           <Link
             href="/se-former"
-            className="inline-flex items-center justify-center rounded-md bg-oxblood px-8 py-4 text-sm font-medium tracking-wide text-parchment-light transition-colors hover:bg-oxblood-deep"
+            className="inline-flex items-center justify-center rounded-lg bg-sage px-8 py-4 text-sm font-medium tracking-wide text-parchment-light transition-colors hover:bg-sage-deep"
           >
             {t("hero_cta_training")}
           </Link>
           <Link
             href="/trouver-un-praticien"
-            className="inline-flex items-center justify-center rounded-md border border-ink-soft/40 px-8 py-4 text-sm font-medium tracking-wide text-ink hover:border-oxblood hover:text-oxblood transition-colors"
+            className="inline-flex items-center justify-center rounded-lg border border-ink-soft/40 px-8 py-4 text-sm font-medium tracking-wide text-ink hover:border-sage hover:text-sage transition-colors"
           >
             {t("hero_cta_directory")}
           </Link>

@@ -1,42 +1,57 @@
 @import "tailwindcss";
 
 /* ──────────────────────────────────────────────────────────────
-   ROP — Organic Medical Archive design tokens
-   Parchment grounds · oxblood accents · italic-serif voice
+   ROP — Therapeutic Wellness design tokens
+   Warm ivory grounds · healing sage · gentle clay warmth
+   Tone: calm, serious, human — after Guy Boitout's practice aesthetic
    ──────────────────────────────────────────────────────────── */
 
 @theme {
-  /* Color palette */
-  --color-parchment: #f5efe2;
-  --color-parchment-light: #faf6ec;
-  --color-parchment-dark: #ebe2cf;
+  /* Backgrounds — warm ivory, light and welcoming */
+  --color-parchment: #f6f1e8;
+  --color-parchment-light: #fbf7f0;
+  --color-parchment-dark: #ece5d8;
 
-  --color-ink: #2a2419;
-  --color-ink-muted: #5a5040;
-  --color-ink-soft: #8a7e68;
+  /* Text — warm charcoal, soft and readable */
+  --color-ink: #2d2922;
+  --color-ink-muted: #5e5a50;
+  --color-ink-soft: #8e8878;
 
+  /* Sage — primary therapeutic accent (healing, calm, nature) */
+  --color-sage: #5a7860;
+  --color-sage-deep: #3e5642;
+  --color-sage-light: #8aad8e;
+
+  /* Clay — warm secondary accent (warmth, humanity, earth) */
+  --color-clay: #9e7550;
+  --color-clay-deep: #7a5a3a;
+  --color-clay-light: #c4a07e;
+
+  /* Moss — maps to clay values for backward compatibility */
+  --color-moss: #9e7550;
+  --color-moss-deep: #7a5a3a;
+
+  /* Oxblood — retained for error/alert states */
   --color-oxblood: #8b3a2a;
   --color-oxblood-deep: #6e2c1f;
   --color-oxblood-light: #b85a47;
 
-  --color-moss: #5c6b4a;
-  --color-moss-deep: #3f4a32;
-
-  --color-bone: #d9cfb8;
-  --color-stone: #a89b82;
+  /* Neutrals */
+  --color-bone: #d8cdb8;
+  --color-stone: #a8987e;
 
   /* Typography */
-  --font-display: "Fraunces", "EB Garamond", "Iowan Old Style", Georgia, serif;
-  --font-body: "Manrope", "Inter Tight", -apple-system, system-ui, sans-serif;
+  --font-display: "Fraunces", "Cormorant Garamond", "EB Garamond", Georgia, serif;
+  --font-body: "Manrope", "Inter", -apple-system, system-ui, sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, monospace;
 
-  /* Spacing scale (consistent rhythm) */
+  /* Spacing scale */
   --section-padding-y: 6rem;
 
-  /* Radius (soft, organic) */
-  --radius-sm: 0.25rem;
-  --radius-md: 0.5rem;
-  --radius-lg: 0.75rem;
+  /* Radius — softer, more welcoming */
+  --radius-sm: 0.375rem;
+  --radius-md: 0.625rem;
+  --radius-lg: 1.25rem;
 }
 
 /* ─── Base ─────────────────────────────────────────────────── */
@@ -57,13 +72,13 @@
     background-image:
       radial-gradient(
         ellipse at top left,
-        rgba(139, 58, 42, 0.04),
-        transparent 60%
+        rgba(90, 120, 96, 0.05),
+        transparent 65%
       ),
       radial-gradient(
         ellipse at bottom right,
-        rgba(92, 107, 74, 0.05),
-        transparent 60%
+        rgba(158, 117, 80, 0.04),
+        transparent 65%
       );
     min-height: 100vh;
   }
@@ -76,26 +91,27 @@
   h6 {
     font-family: var(--font-display);
     font-weight: 400;
+    font-variation-settings: "opsz" 18, "SOFT" 50;
     letter-spacing: -0.02em;
     color: var(--color-ink);
   }
 
-  /* Italic emphasis on display headings — signature of the aesthetic */
+  /* Italic emphasis — sage warmth, therapeutic calm */
   .display em,
   h1 em,
   h2 em {
     font-style: italic;
-    color: var(--color-oxblood);
+    color: var(--color-sage);
     font-feature-settings: "salt", "ss01";
   }
 
   ::selection {
-    background-color: var(--color-oxblood);
+    background-color: var(--color-sage);
     color: var(--color-parchment-light);
   }
 }
 
-/* ─── Decorative — paper grain overlay ─────────────────────── */
+/* ─── Decorative — very subtle paper warmth ─────────────────── */
 
 .grain::before {
   content: "";
@@ -103,12 +119,12 @@
   inset: 0;
   pointer-events: none;
   z-index: 1;
-  opacity: 0.4;
+  opacity: 0.18;
   mix-blend-mode: multiply;
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.165 0 0 0 0 0.141 0 0 0 0 0.098 0 0 0 0.18 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
 }
 
-/* ─── Section rule (hairline, archival feel) ───────────────── */
+/* ─── Section rule (hairline) ───────────────────────────────── */
 
 .rule {
   height: 1px;
@@ -120,14 +136,14 @@
   );
 }
 
-/* ─── Eyebrow label (small caps category marker) ───────────── */
+/* ─── Eyebrow label (small caps, sage accent) ───────────────── */
 
 .eyebrow {
   font-family: var(--font-body);
   font-size: 0.75rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--color-oxblood);
+  color: var(--color-sage);
   font-weight: 500;
 }
 

@@ -30,11 +30,11 @@ export function Header() {
               href="https://www.guy-boitout.com"
               target="_blank"
               rel="noreferrer"
-              className="hover:text-oxblood"
+              className="hover:text-sage"
             >
               {t("publications_external")}
             </a>
-            <Link href={pathname} locale={otherLocale} className="font-mono uppercase hover:text-oxblood">
+            <Link href={pathname} locale={otherLocale} className="font-mono uppercase hover:text-sage">
               {otherLocale}
             </Link>
           </div>
@@ -42,7 +42,7 @@ export function Header() {
       </div>
 
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-12">
-        <Link href="/" className="font-display tracking-tight text-ink hover:text-oxblood transition-colors">
+        <Link href="/" className="font-display tracking-tight text-ink hover:text-sage transition-colors">
           <span className="text-xl">R.O.P.</span>
           <span className="ml-2 hidden text-[11px] uppercase tracking-[0.22em] text-ink-muted sm:inline">
             Réflexologie Occipito-Podale
@@ -55,7 +55,7 @@ export function Header() {
             onMouseEnter={() => setMethodOpen(true)}
             onMouseLeave={() => setMethodOpen(false)}
           >
-            <Link href="/la-methode" className="text-ink-muted hover:text-oxblood transition-colors">
+            <Link href="/la-methode" className="text-ink-muted hover:text-sage transition-colors">
               {t("method")}
             </Link>
             {methodOpen && (
@@ -76,7 +76,7 @@ export function Header() {
             onMouseEnter={() => setTrainOpen(true)}
             onMouseLeave={() => setTrainOpen(false)}
           >
-            <Link href="/se-former" className="text-ink-muted hover:text-oxblood transition-colors">
+            <Link href="/se-former" className="text-ink-muted hover:text-sage transition-colors">
               {t("training")}
             </Link>
             {trainOpen && (
@@ -91,10 +91,10 @@ export function Header() {
             )}
           </div>
 
-          <Link href="/trouver-un-praticien" className="text-ink-muted hover:text-oxblood transition-colors">
+          <Link href="/trouver-un-praticien" className="text-ink-muted hover:text-sage transition-colors">
             {t("directory")}
           </Link>
-          <Link href="/contact" className="text-ink-muted hover:text-oxblood transition-colors">
+          <Link href="/contact" className="text-ink-muted hover:text-sage transition-colors">
             {t("contact")}
           </Link>
         </nav>
@@ -136,7 +136,7 @@ export function Header() {
             <li><MobileLink href="/trouver-un-praticien" onClick={() => setMobileOpen(false)}>{t("directory")}</MobileLink></li>
             <li><MobileLink href="/contact" onClick={() => setMobileOpen(false)}>{t("contact")}</MobileLink></li>
             <li className="border-t border-ink-soft/20 pt-3">
-              <Link href={pathname} locale={otherLocale} onClick={() => setMobileOpen(false)} className="font-mono text-xs uppercase text-ink-soft hover:text-oxblood">
+              <Link href={pathname} locale={otherLocale} onClick={() => setMobileOpen(false)} className="font-mono text-xs uppercase text-ink-soft hover:text-sage">
                 {otherLocale === "en" ? "English" : "Français"}
               </Link>
             </li>
@@ -151,7 +151,7 @@ function DropLink({ href, children }: { href: string; children: React.ReactNode 
   return (
     <Link
       href={href}
-      className="block px-5 py-3 text-xs normal-case tracking-normal text-ink-muted hover:bg-parchment hover:text-oxblood"
+      className="block px-5 py-3 text-xs normal-case tracking-normal text-ink-muted hover:bg-parchment hover:text-sage"
     >
       {children}
     </Link>
@@ -168,7 +168,7 @@ function MobileLink({
   children: React.ReactNode;
 }) {
   return (
-    <Link href={href} onClick={onClick} className="block text-ink-muted hover:text-oxblood">
+    <Link href={href} onClick={onClick} className="block text-ink-muted hover:text-sage">
       {children}
     </Link>
   );

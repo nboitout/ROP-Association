@@ -22,8 +22,8 @@ export function HeritageTimeline() {
       <ol className="mt-16 grid gap-0 border-l border-ink-soft/30 md:grid-cols-1">
         {events.map((e, i) => (
           <li key={i} className="relative grid gap-4 pb-12 pl-8 md:grid-cols-[120px_1fr] md:gap-12 md:pl-12">
-            <span className="absolute left-[-5px] top-1 h-2.5 w-2.5 rounded-full bg-oxblood md:left-[-7px]" />
-            <p className="font-mono text-xs uppercase tracking-[0.18em] text-oxblood md:pt-1">
+            <span className="absolute left-[-5px] top-1 h-2.5 w-2.5 rounded-full bg-sage md:left-[-7px]" />
+            <p className="font-mono text-xs uppercase tracking-[0.18em] text-sage md:pt-1">
               {e.year}
             </p>
             <div>
@@ -41,7 +41,7 @@ export function HeritageTimeline() {
           href="https://www.guy-boitout.com"
           target="_blank"
           rel="noreferrer"
-          className="text-sm tracking-wide text-oxblood hover:text-oxblood-deep"
+          className="text-sm tracking-wide text-sage hover:text-sage-deep"
         >
           {t("heritage_link")}
         </a>

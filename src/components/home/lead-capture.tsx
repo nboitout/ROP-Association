@@ -59,7 +59,7 @@ export function LeadCapture() {
 
         <div className="lg:col-span-7">
           {status === "success" ? (
-            <p className="border-l-2 border-moss bg-parchment-light p-6 font-display text-lg italic text-ink">
+            <p className="border-l-2 border-sage bg-parchment-light p-6 font-display text-lg italic text-ink">
               {f("success")}
             </p>
           ) : (
@@ -78,7 +78,7 @@ export function LeadCapture() {
                   name="profession"
                   required
                   defaultValue=""
-                  className="w-full border-b border-ink-soft/40 bg-transparent py-3 font-display text-lg text-ink focus:border-oxblood focus:outline-none"
+                  className="w-full border-b border-ink-soft/40 bg-transparent py-3 font-display text-lg text-ink focus:border-sage focus:outline-none"
                 >
                   <option value="" disabled>
                     {f("profession_placeholder")}
@@ -97,7 +97,7 @@ export function LeadCapture() {
                   name="consent"
                   value="yes"
                   required
-                  className="mt-1 h-4 w-4 accent-oxblood"
+                  className="mt-1 h-4 w-4 accent-sage"
                 />
                 <span>{f("consent")}</span>
               </label>
@@ -106,7 +106,7 @@ export function LeadCapture() {
                 <button
                   type="submit"
                   disabled={status === "submitting"}
-                  className="inline-flex items-center justify-center rounded-md bg-oxblood px-8 py-3 text-sm font-medium tracking-wide text-parchment-light transition-colors hover:bg-oxblood-deep disabled:opacity-60"
+                  className="inline-flex items-center justify-center rounded-lg bg-sage px-8 py-3 text-sm font-medium tracking-wide text-parchment-light transition-colors hover:bg-sage-deep disabled:opacity-60"
                 >
                   {status === "submitting" ? f("submitting") : f("submit")}
                 </button>
@@ -145,7 +145,7 @@ function Field({
         name={name}
         type={type}
         required={required}
-        className="w-full border-b border-ink-soft/40 bg-transparent py-3 font-display text-lg text-ink placeholder:text-ink-soft focus:border-oxblood focus:outline-none"
+        className="w-full border-b border-ink-soft/40 bg-transparent py-3 font-display text-lg text-ink placeholder:text-ink-soft focus:border-sage focus:outline-none"
       />
     </div>
   );
