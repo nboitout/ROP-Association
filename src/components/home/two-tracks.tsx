@@ -22,7 +22,7 @@ export function TwoTracks() {
             body={t("tracks_train_body")}
             ctaText={t("tracks_train_cta")}
             href="/se-former"
-            accent="oxblood"
+            accent="sage"
           />
           <TrackCard
             label={t("tracks_directory_label")}
@@ -30,7 +30,7 @@ export function TwoTracks() {
             body={t("tracks_directory_body")}
             ctaText={t("tracks_directory_cta")}
             href="/trouver-un-praticien"
-            accent="moss"
+            accent="clay"
           />
         </div>
       </div>
@@ -51,10 +51,10 @@ function TrackCard({
   body: string;
   ctaText: string;
   href: string;
-  accent: "oxblood" | "moss";
+  accent: "sage" | "clay";
 }) {
-  const accentClass = accent === "oxblood" ? "text-oxblood" : "text-moss";
-  const borderClass = accent === "oxblood" ? "group-hover:border-oxblood" : "group-hover:border-moss";
+  const accentClass = accent === "sage" ? "text-sage" : "text-clay";
+  const borderClass = accent === "sage" ? "group-hover:border-sage" : "group-hover:border-clay";
 
   return (
     <Link

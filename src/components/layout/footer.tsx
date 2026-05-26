@@ -11,7 +11,7 @@ export function Footer() {
         <div className="grid gap-12 md:grid-cols-4">
           <div className="md:col-span-2">
             <h3 className="font-display text-2xl tracking-tight">
-              R.O.P. <em className="text-oxblood">Réflexologie Occipito-Podale</em>
+              R.O.P. <em className="text-sage">Réflexologie Occipito-Podale</em>
             </h3>
             <p className="mt-3 max-w-sm text-sm text-ink-muted">{t("site.tagline")}</p>
             <p className="mt-4 text-sm font-medium text-ink">{t("site.founder")}</p>
@@ -20,7 +20,7 @@ export function Footer() {
               {t("site.address_line1")}<br />
               {t("site.address_line2")}<br />
               <span className="mt-2 inline-block">
-                Tél : <a href={`tel:${t("site.phone").replace(/\s/g, "")}`} className="hover:text-oxblood">{t("site.phone")}</a>
+                Tél : <a href={`tel:${t("site.phone").replace(/\s/g, "")}`} className="hover:text-sage">{t("site.phone")}</a>
               </span>
             </address>
             <p className="mt-4 text-xs leading-relaxed text-ink-soft">
@@ -32,20 +32,20 @@ export function Footer() {
           <div>
             <p className="eyebrow mb-4">{t("footer.links_title")}</p>
             <ul className="space-y-2 text-sm text-ink-muted">
-              <li><Link href="/la-methode" className="hover:text-oxblood">{t("nav.method")}</Link></li>
-              <li><Link href="/se-former" className="hover:text-oxblood">{t("nav.training")}</Link></li>
-              <li><Link href="/trouver-un-praticien" className="hover:text-oxblood">{t("nav.directory")}</Link></li>
-              <li><Link href="/enseignants" className="hover:text-oxblood">{t("nav.teachers")}</Link></li>
-              <li><Link href="/recherche" className="hover:text-oxblood">{t("nav.research")}</Link></li>
-              <li><Link href="/contact" className="hover:text-oxblood">{t("nav.contact")}</Link></li>
+              <li><Link href="/la-methode" className="hover:text-sage">{t("nav.method")}</Link></li>
+              <li><Link href="/se-former" className="hover:text-sage">{t("nav.training")}</Link></li>
+              <li><Link href="/trouver-un-praticien" className="hover:text-sage">{t("nav.directory")}</Link></li>
+              <li><Link href="/enseignants" className="hover:text-sage">{t("nav.teachers")}</Link></li>
+              <li><Link href="/recherche" className="hover:text-sage">{t("nav.research")}</Link></li>
+              <li><Link href="/contact" className="hover:text-sage">{t("nav.contact")}</Link></li>
             </ul>
 
             <p className="eyebrow mb-3 mt-8">{t("footer.partners_title")}</p>
             <ul className="space-y-1 text-xs text-ink-soft">
-              <li><a href="https://www.data-dock.fr" target="_blank" rel="noreferrer" className="hover:text-oxblood">Datadock</a></li>
-              <li><a href="https://syndicat-reflexologues.com" target="_blank" rel="noreferrer" className="hover:text-oxblood">Syndicat des Réflexologues</a></li>
-              <li><a href="https://reflexology-europe.org" target="_blank" rel="noreferrer" className="hover:text-oxblood">Reflexology in Europe</a></li>
-              <li><a href="https://www.osteopathie.org/" target="_blank" rel="noreferrer" className="hover:text-oxblood">Registre des Ostéopathes</a></li>
+              <li><a href="https://www.data-dock.fr" target="_blank" rel="noreferrer" className="hover:text-sage">Datadock</a></li>
+              <li><a href="https://syndicat-reflexologues.com" target="_blank" rel="noreferrer" className="hover:text-sage">Syndicat des Réflexologues</a></li>
+              <li><a href="https://reflexology-europe.org" target="_blank" rel="noreferrer" className="hover:text-sage">Reflexology in Europe</a></li>
+              <li><a href="https://www.osteopathie.org/" target="_blank" rel="noreferrer" className="hover:text-sage">Registre des Ostéopathes</a></li>
             </ul>
           </div>
 
@@ -58,7 +58,7 @@ export function Footer() {
               href="https://www.guy-boitout.com"
               target="_blank"
               rel="noreferrer"
-              className="mt-3 inline-block text-sm tracking-wide text-oxblood hover:text-oxblood-deep"
+              className="mt-3 inline-block text-sm tracking-wide text-sage hover:text-sage-deep"
             >
               {t("footer.publications_link")}
             </a>
