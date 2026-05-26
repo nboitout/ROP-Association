@@ -26,6 +26,28 @@
     "contact": "Contact"
   },
   "home": {
+    "welcome": {
+      "eyebrow": "Welcome — a note from the founder",
+      "title": "A site for health professionals and <em>reflexologists</em>",
+      "intro_1": "For three decades we have been teaching a technique born of the meeting between the reflexology tradition and clinical observation: Occipito-Podal Reflexology. A gentle, precise method, grounded in the representation of the body on the foot and the back of the head.",
+      "intro_2": "This site brings together our training programme, the network of certified practitioners and our online learning resources. Every path here is designed for demanding professionals committed to a safe, well-founded practice.",
+      "close": "You will also find the spirit of our Institute: exchange, shared expertise and long-term human companionship.",
+      "signoff": "Enjoy your visit.",
+      "founder_role": "Founder · Pedagogical Director",
+      "lineage": "Co-designed with Jean-Pierre Vadala",
+      "pillar_formation_label": "Training",
+      "pillar_formation_title": "A structured, accredited curriculum",
+      "pillar_formation_body": "A solid foundation course, extended by clinical post-graduate modules, leading to R.O.P. certification.",
+      "pillar_postgrad_label": "Post-graduation",
+      "pillar_postgrad_title": "Deepening, lifelong",
+      "pillar_postgrad_body": "Thematic modules to refine practice: specific terrains, indications, advanced gestures.",
+      "pillar_community_label": "Community",
+      "pillar_community_title": "A practitioner network",
+      "pillar_community_body": "70+ certified practitioners across France and Spain, united by a shared standard.",
+      "trust_agrement": "Accredited training · No. 24450434645",
+      "trust_siret": "SIRET 428 736 342 00026",
+      "trust_location": "Sully-sur-Loire · Centre-Val de Loire"
+    },
     "welcome_title": "Welcome to our site dedicated to health professionals and reflexologists",
     "welcome_intro": "Explore our reflexology training program, our post-graduate modules and our online learning resources.",
     "welcome_community": "Join a passionate and supportive community where exchange and shared expertise foster excellence in the fields of wellbeing and health.",

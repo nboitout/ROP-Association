@@ -26,6 +26,28 @@
     "contact": "Contact"
   },
   "home": {
+    "welcome": {
+      "eyebrow": "Bienvenue — un mot du fondateur",
+      "title": "Un site dédié aux professionnels de santé et aux <em>réflexologues</em>",
+      "intro_1": "Depuis trois décennies, nous transmettons une technique née de la rencontre entre la tradition réflexologique et l'observation clinique : la Réflexologie Occipito-Podale. Une méthode douce, précise, fondée sur la représentation du corps sur le pied et l'arrière de la tête.",
+      "intro_2": "Ce site rassemble notre programme de formation, le réseau de praticiens certifiés et nos ressources pédagogiques en ligne. Chaque parcours y est pensé pour des professionnels exigeants, soucieux d'une pratique sûre et fondée.",
+      "close": "Vous y trouverez aussi l'esprit qui anime notre Institut : l'échange, le partage d'expertise et un compagnonnage humain au long cours.",
+      "signoff": "Bonne visite.",
+      "founder_role": "Fondateur · Directeur pédagogique",
+      "lineage": "Co-conçu avec Jean-Pierre Vadala",
+      "pillar_formation_label": "Formation",
+      "pillar_formation_title": "Un cursus structuré, agréé",
+      "pillar_formation_body": "Une formation de base solide, complétée par des post-gradués cliniques, conduisant à la certification R.O.P.",
+      "pillar_postgrad_label": "Post-graduation",
+      "pillar_postgrad_title": "Approfondir, toute une vie",
+      "pillar_postgrad_body": "Des modules thématiques pour affiner la pratique : terrains spécifiques, indications, gestes avancés.",
+      "pillar_community_label": "Communauté",
+      "pillar_community_title": "Un réseau de praticiens",
+      "pillar_community_body": "70+ praticiens certifiés en France et en Espagne, réunis autour d'une exigence partagée.",
+      "trust_agrement": "Formation agréée · N° 24450434645",
+      "trust_siret": "SIRET 428 736 342 00026",
+      "trust_location": "Sully-sur-Loire · Centre-Val de Loire"
+    },
     "welcome_title": "Bienvenue sur notre site dédié aux professionnels de santé et aux réflexologues",
     "welcome_intro": "Explorez notre programme de formation en réflexologie, nos post-gradués et nos ressources pédagogiques en ligne pour progresser à votre rythme.",
     "welcome_community": "Rejoignez une communauté passionnée et solidaire, où l'échange et le partage d'expertise favorisent l'excellence dans le domaine du bien-être et de la santé.",

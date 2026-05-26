@@ -11,6 +11,13 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "rop-pi.vercel.app" },
     ],
   },
+  async redirects() {
+    return [
+      // Preserve inbound links from the previous Wix site.
+      { source: "/welcome", destination: "/#welcome", permanent: true },
+      { source: "/:locale(fr|en)/welcome", destination: "/:locale#welcome", permanent: true },
+    ];
+  },
 };
 
 export default withNextIntl(nextConfig);
